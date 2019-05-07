@@ -1,0 +1,338 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.theme-red .color-multitheme, .theme-red
+.color-multitheme > * {
+  color: #f44336;
+}
+
+.theme-cyan .color-multitheme, .theme-cyan
+.color-multitheme > * {
+  color: #00ffff;
+}
+
+.theme-blue .color-multitheme, .theme-blue
+.color-multitheme > * {
+  color: #0000ff;
+}
+
+.theme-darkblue .color-multitheme, .theme-darkblue
+.color-multitheme > * {
+  color: #0000a0;
+}
+
+.theme-lightblue .color-multitheme, .theme-lightblue
+.color-multitheme > * {
+  color: #add8e6;
+}
+
+.theme-purple .color-multitheme, .theme-purple
+.color-multitheme > * {
+  color: #800080;
+}
+
+.theme-yellow .color-multitheme, .theme-yellow
+.color-multitheme > * {
+  color: #ffff00;
+}
+
+.theme-lime .color-multitheme, .theme-lime
+.color-multitheme > * {
+  color: #00ff00;
+}
+
+.theme-magenta .color-multitheme, .theme-magenta
+.color-multitheme > * {
+  color: #ff00ff;
+}
+
+.theme-white .color-multitheme, .theme-white
+.color-multitheme > * {
+  color: #ffffff;
+}
+
+.theme-silver .color-multitheme, .theme-silver
+.color-multitheme > * {
+  color: #c0c0c0;
+}
+
+.theme-gray .color-multitheme, .theme-gray
+.color-multitheme > * {
+  color: #808080;
+}
+
+.theme-black .color-multitheme, .theme-black
+.color-multitheme > * {
+  color: #000000;
+}
+
+.theme-orange .color-multitheme, .theme-orange
+.color-multitheme > * {
+  color: #ffa500;
+}
+
+.theme-brown .color-multitheme, .theme-brown
+.color-multitheme > * {
+  color: #a52a2a;
+}
+
+.theme-maroon .color-multitheme, .theme-maroon
+.color-multitheme > * {
+  color: #800000;
+}
+
+.theme-green .color-multitheme, .theme-green
+.color-multitheme > * {
+  color: #008000;
+}
+
+.theme-olive .color-multitheme, .theme-olive
+.color-multitheme > * {
+  color: #808000;
+}
+
+.theme-red .bgcolor-multitheme, .theme-red
+.bgcolor-multitheme > * {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.theme-cyan .bgcolor-multitheme, .theme-cyan
+.bgcolor-multitheme > * {
+  background-color: #00ffff;
+  color: #ffffff;
+}
+
+.theme-blue .bgcolor-multitheme, .theme-blue
+.bgcolor-multitheme > * {
+  background-color: #0000ff;
+  color: #ffffff;
+}
+
+.theme-darkblue .bgcolor-multitheme, .theme-darkblue
+.bgcolor-multitheme > * {
+  background-color: #0000a0;
+  color: #ffffff;
+}
+
+.theme-lightblue .bgcolor-multitheme, .theme-lightblue
+.bgcolor-multitheme > * {
+  background-color: #add8e6;
+  color: #ffffff;
+}
+
+.theme-purple .bgcolor-multitheme, .theme-purple
+.bgcolor-multitheme > * {
+  background-color: #800080;
+  color: #ffffff;
+}
+
+.theme-yellow .bgcolor-multitheme, .theme-yellow
+.bgcolor-multitheme > * {
+  background-color: #ffff00;
+  color: #ffffff;
+}
+
+.theme-lime .bgcolor-multitheme, .theme-lime
+.bgcolor-multitheme > * {
+  background-color: #00ff00;
+  color: #ffffff;
+}
+
+.theme-magenta .bgcolor-multitheme, .theme-magenta
+.bgcolor-multitheme > * {
+  background-color: #ff00ff;
+  color: #ffffff;
+}
+
+.theme-white .bgcolor-multitheme, .theme-white
+.bgcolor-multitheme > * {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.theme-silver .bgcolor-multitheme, .theme-silver
+.bgcolor-multitheme > * {
+  background-color: #c0c0c0;
+  color: #ffffff;
+}
+
+.theme-gray .bgcolor-multitheme, .theme-gray
+.bgcolor-multitheme > * {
+  background-color: #808080;
+  color: #ffffff;
+}
+
+.theme-black .bgcolor-multitheme, .theme-black
+.bgcolor-multitheme > * {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.theme-orange .bgcolor-multitheme, .theme-orange
+.bgcolor-multitheme > * {
+  background-color: #ffa500;
+  color: #ffffff;
+}
+
+.theme-brown .bgcolor-multitheme, .theme-brown
+.bgcolor-multitheme > * {
+  background-color: #a52a2a;
+  color: #ffffff;
+}
+
+.theme-maroon .bgcolor-multitheme, .theme-maroon
+.bgcolor-multitheme > * {
+  background-color: #800000;
+  color: #ffffff;
+}
+
+.theme-green .bgcolor-multitheme, .theme-green
+.bgcolor-multitheme > * {
+  background-color: #008000;
+  color: #ffffff;
+}
+
+.theme-olive .bgcolor-multitheme, .theme-olive
+.bgcolor-multitheme > * {
+  background-color: #808000;
+  color: #ffffff;
+}
+
+.mainbody {
+  position: relative;
+}
+
+.mainbody ::-webkit-scrollbar {
+  visibility: hidden;
+  width: 0.4rem;
+  -webkit-transition: all 2s;
+  /* Safari */
+  transition: all 2s;
+}
+
+.mainbody ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.mainbody ::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.mainbody :hover::-webkit-scrollbar {
+  visibility: visible;
+  -webkit-transition: all 2s;
+  /* Safari */
+  transition: all 2s;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0.5s, opacity 0.5s linear;
+  transition: visibility 0.5s, opacity 0.5s linear;
+  z-index: 1;
+}
+
+section.bodysection {
+  margin: 6.25rem 1rem 0 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  min-height: 2000px;
+  padding: 0 1rem;
+}
+
+section.bodysection .bodysection__pagetitle {
+  color: #555;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  padding-bottom: 0.5rem;
+}
+
+.pagecard {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pagecard .card-header {
+  background-color: #fff;
+}
+
+.pagecard .pagecard__headtext {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 992px) {
+  section.bodysection {
+    margin: 6.25rem 1rem 0 19.5rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+/*# sourceMappingURL=App.css.map */

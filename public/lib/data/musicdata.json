@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "song": "Bản tình cuối",
+    "filename": "Ban tinh cuoi - Quach Thanh Danh.mp3",
+    "artist": "Quách Thành Danh",
+    "author": null,
+    "type": "Pop/Ballad",
+    "listent": 0,
+    "download": 0,
+    "lyric": "1.txt",
+    "thumb": "13295.jpg"
+  },
+  {
+    "id": 2,
+    "song": "Biết mãi là bao lâu",
+    "filename": "Biet mai la bao lau - Nguyen Ha.mp3",
+    "artist": "Nguyên Hà",
+    "author": null,
+    "type": "Pop/Ballad",
+    "listent": 0,
+    "download": 0,
+    "lyric": "2.txt",
+    "thumb": "1538469374662.jpg"
+  },
+  {
+    "id": 3,
+    "song": "Can't you feel the love to night",
+    "filename": "Can't you feel the love to night - Elton John.mp3",
+    "artist": "Elton John",
+    "author": "Elton John",
+    "type": "Pop/Ballad",
+    "listent": 0,
+    "download": 0,
+    "lyric": "3.txt",
+    "thumb": "220px-Elton_john-can_you_feel_the_love_tonight.jpg"
+  },
+  {
+    "id": 4,
+    "song": "Circle Of Life (From -The Lion King-)",
+    "filename": "Circle Of Life (From -The Lion King-) - Elton John.mp3",
+    "artist": "Elton John",
+    "author": "Elton John",
+    "type": "Pop/Ballad",
+    "listent": 0,
+    "download": 0,
+    "lyric": "4.txt",
+    "thumb": "Musicals-Forever-Lion-King-English-2017-500x500.jpg"
+  },
+  {
+    "id": 5,
+    "song": "Earth Song",
+    "filename": "Earth Song - Michael Jackson.mp3",
+    "artist": "Michael Jackson",
+    "author": "Michael Jackson",
+    "type": "Pop/Ballad",
+    "listent": 0,
+    "download": 0,
+    "lyric": "5.txt",
+    "thumb": "220px-Earth_Song.jpg"
+  },
+  {
+    "id": 6,
+    "song": "Em đi",
+    "filename": "Em di - Nguyen Ha.mp3",
+    "artist": "Nguyên Hà",
+    "author": "Quốc Bảo",
+    "type": "Pop/Ballad",
+    "listent": 0,
+    "download": 0,
+    "lyric": "6.txt",
+    "thumb": "artworks-000201444468-sdaac1-t500x500.jpg"
+  },
+  {
+    "id": 7,
+    "song": "Em vẫn như ngày xưa",
+    "filename": "Em van nhu ngay xua - Nguyen Ha.mp3",
+    "artist": "Nguyên Hà",
+    "author": "Trần Tiến",
+    "type": "Pop/Ballad",
+    "listent": 0,
+    "download": 0,
+    "lyric": "7.txt",
+    "thumb": "1538469374662.jpg"
+  },
+  {
+    "id": 8,
+    "song": "Khi người lớn cô đơn",
+    "filename": "Khi nguoi lon co don - Pham Hong Phuoc.mp3",
+    "artist": "Phạm Hồng Phước",
+    "author": "Phạm Hồng Phước",
+    "type": "Pop/Ballad",
+    "listent": 0,
+    "download": 0,
+    "lyric": "8.txt",
+    "thumb": "bdcbd838ae9bbb659bedb9e137bd1221_1374744627.jpg"
+  },
+  {
+    "id": 9,
+    "song": "Thanh Xuân",
+    "filename": "Thanh xuan - Da Lab.mp3",
+    "artist": "Dalab",
+    "author": "Dalab",
+    "type": "Pop/Ballad",
+    "listent": 0,
+    "download": 0,
+    "lyric": "9.txt",
+    "thumb": "1535121377317_640.jpg"
+  },
+  {
+    "id": 10,
+    "song": "Lạ",
+    "filename": "Lạ - Phạm Đình Thái Ngân.mp3",
+    "artist": "Phạm Đình Thái Ngân",
+    "author": null,
+    "type": "Nhạc trẻ",
+    "listent": 0,
+    "download": 0,
+    "lyric": "la.txt",
+    "thumb": "8910faa3cbbc9e17adcda9cfecb8c8d7_1423710030.jpg"
+  }
+]

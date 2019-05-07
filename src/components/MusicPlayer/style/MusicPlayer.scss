@@ -1,0 +1,340 @@
+@import "../../../commons/mixins.scss";
+
+.musicplayer__app {
+  .musicplayer__timeline {
+    display: flex;
+    align-content: center;
+    line-height: 0.3rem;
+    padding: 0.5rem 0;
+    > span {
+      font-size: 0.8rem;
+    }
+  }
+
+  .musicplayer__player {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #0e0e0e;
+    padding: 0.5rem;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3);
+    .musicplayer__thumbnail {
+      width: 30%;
+      overflow: hidden;
+      background-color: transparent;
+      text-align: center;
+      img {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+    .musicplayer__control {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      color: #fff;
+      padding: 0 0 0 0.5rem;
+      .musicplayer__songinfo {
+        height: 100%;
+        .musicplayer__songtitle {
+          padding: 0.5rem 0;
+          font-size: 1.7rem;
+          font-weight: 600;
+        }
+        .musicplayer__songartist {
+          color: #f3f3f3;
+          font-size: 1.1rem;
+          font-weight: 300;
+        }
+        .musicplayer__songauthor {
+          color: #f7f7f7;
+          font-size: 0.9rem;
+          padding-top: 0.3rem;
+          font-weight: 300;
+        }
+        > * {
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .musicplayer__btngroup {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      > div {
+        display: flex;
+        justify-content: center;
+      }
+      .musicplayer__btn {
+        padding: 0;
+        margin: 0;
+        outline: none;
+        border: none;
+        line-height: 0;
+        background: none;
+        border-radius: 0;
+        color: #fff;
+        font-size: 1rem;
+        &:visited,
+        &:active,
+        &:focus {
+          outline: none;
+          border: none;
+        }
+        &:hover {
+          color: #00a500;
+        }
+        &:active {
+          color: #ccc;
+        }
+      }
+      .musicplayer__groupcontrol {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .musicplayer__btn {
+          padding: 0 0.2rem;
+          &.musicplayer__playpause {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      .musicplayer__groupsound {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 20%;
+        > * {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+        }
+        .musicplayer__volumecontainer {
+          position: relative;
+          width: 0;
+          transition: width 0.2s;
+          -webkit-transition: width 0.2s;
+          input.musicplayer__volumeslider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 0.2rem;
+            outline: none;
+            opacity: 1;
+            -webkit-transition: 0.2s;
+            transition: opacity 0.2s;
+            z-index: 10;
+            position: absolute;
+            left: 0;
+            background-color: #fff;
+            cursor: pointer;
+            &::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              appearance: none;
+              width: 0.6rem;
+              height: 0.6rem;
+              border-radius: 50%;
+              background-color: #eee;
+              cursor: pointer;
+              z-index: 10;
+              visibility: hidden;
+            }
+            &::-moz-range-thumb {
+              width: 0.6rem;
+              height: 0.6rem;
+              background-color: #eee;
+              cursor: pointer;
+              z-index: 10;
+              visibility: hidden;
+            }
+          }
+          .musicplayer__volumesliderback {
+            width: 50%;
+            height: 0.2rem;
+            position: absolute;
+            left: 0;
+            background: #00a500;
+            z-index: 1;
+          }
+        }
+        &:hover {
+          .musicplayer__volumecontainer {
+            width: 100%;
+            transition: width 0.2s;
+            -webkit-transition: width 0.2s;
+            input.musicplayer__volumeslider {
+              &::-webkit-slider-thumb {
+                visibility: visible;
+              }
+              &::-moz-range-thumb {
+                visibility: visible;
+              }
+            }
+          }
+        }
+      }
+
+      .musicplayer__groupmode {
+        i {
+          padding: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          small {
+            font-family: sans-serif;
+            margin: -2px 0 0 2px;
+            font-size: 0.6rem;
+            opacity: 0.5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            line-height: 0rem;
+          }
+        }
+      }
+    }
+  }
+  .musicplayer__slidercontainer {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 0.2rem;
+    padding: 0;
+    margin: 0 0.5rem;
+    input.musicplayer__slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 0.2rem;
+      outline: none;
+      opacity: 1;
+      -webkit-transition: 0.2s;
+      transition: opacity 0.2s;
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      cursor: pointer;
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background-color: #00a500;
+        cursor: pointer;
+        z-index: 10;
+      }
+      &::-moz-range-thumb {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background-color: #00a500;
+        cursor: pointer;
+        z-index: 10;
+      }
+    }
+    .musicplayer__sliderback {
+      height: 0.2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #00a500;
+      z-index: 1;
+    }
+  }
+}
+
+.musicplayer__lyric {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  .musicplayer__lyricbody {
+    color: #333;
+    font-size: 0.9rem;
+  }
+}
+
+.musicplayer__list {
+  .musicplayer__listbody {
+    background-color: #fff;
+    padding: 0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  .musicplayer__listheader {
+    h5 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      background-color: #cecece;
+      padding: 0.5rem;
+    }
+  }
+  .musicplayer__listlink {
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    a {
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      text-decoration: none;
+      color: inherit;
+      .musicplayer__listthumb {
+        height: 4rem;
+        width: 5rem;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        img {
+          width: 100%;
+        }
+      }
+      .musicplayer__listinfo {
+        width: 100%;
+        padding: 0 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h6 {
+          font-size: 0.9rem;
+          font-weight: 600;
+          i.fas {
+            margin-right: 3px;
+            font-size: 0.8rem;
+          }
+        }
+        p {
+          &.musicplayer__infoartist {
+            font-size: 0.8rem;
+            font-style: italic;
+          }
+          &.musicplayer__infocount {
+            height: 100%;
+            font-size: 0.7rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #888;
+            span {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
+}

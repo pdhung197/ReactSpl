@@ -1,0 +1,100 @@
+.rightside {
+  width: 17.5rem;
+  height: calc(100vh - 4.4rem);
+  position: fixed;
+  right: -17.5rem;
+  top: 4.4rem;
+  background: #fdfdfd;
+  -webkit-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+
+  &.open {
+    right: 0;
+    ~ .overlay {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transition: visibility 0.5s, opacity 0.5s linear;
+      -ms-transition: visibility 0.5s, opacity 0.5s linear;
+      transition: visibility 0.5s, opacity 0.5s linear;
+    }
+  }
+}
+.rightnavtab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .rightnavtab__navitem {
+    width: 50%;
+    text-align: center;
+  }
+}
+.rightnavtab__tabcontent {
+  height: calc(100% - 3rem);
+  overflow: auto;
+}
+.rightnavtab__tabcolorcheckitem {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.8px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  &:hover,
+  &.activetheme {
+    background-color: #efefef;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+  }
+  > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    > * {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
+    input[type="radio"] {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+    i {
+      font-size: 2rem;
+      &.checksymbol {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.2s;
+        -webkit-transition: visibility 0.3s, opacity 0.2s;
+        &.activetheme {
+          visibility: visible;
+          opacity: 1;
+          transition: visibility 0.3s, opacity 0.2s;
+          -webkit-transition: visibility 0.3s, opacity 0.2s;
+        }
+      }
+    }
+    span {
+      margin-left: 0.5rem;
+      text-transform: capitalize;
+      font-size: 0.9rem;
+    }
+  }
+}

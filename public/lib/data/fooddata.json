@@ -1,0 +1,28 @@
+[
+  { "id": 1, "name": "Cá kho", "cost": 0.98, "image": "Cá_kho_tộ,_cá_hú.jpg" },
+  {
+    "id": 2,
+    "name": "Cá khô",
+    "cost": 1.73,
+    "image": "1200px-Sardinas_salazón-2009.jpg"
+  },
+  { "id": 3, "name": "Chả", "cost": 2.93, "image": "Bun_Cha.jpg" },
+  { "id": 4, "name": "Dồi", "cost": 1.79, "image": "Dồi.jpg" },
+  { "id": 5, "name": "Dưa muối", "cost": 2.66, "image": "1200px-Dưa_muối.JPG" },
+  { "id": 6, "name": "Giò", "cost": 3.33, "image": "Gio_lua_2.jpg" },
+  { "id": 7, "name": "Lòng non", "cost": 1.11, "image": "Tràng_lợn_luộc.jpg" },
+  {
+    "id": 8,
+    "name": "Rau muống xào tỏi",
+    "cost": 0.26,
+    "image": "1200px-Rau_muống_xào_tỏi.jpg"
+  },
+  { "id": 9, "name": "Canh chua", "cost": 2.01, "image": "Canhchua2.jpg" },
+  {
+    "id": 10,
+    "name": "Ruốc",
+    "cost": 3.15,
+    "image": "Fragrance_Pork_Floss.jpg"
+  },
+  { "id": 11, "name": "Thịt kho", "cost": 0.69, "image": "Thit-kho-tieu-1.jpg" }
+]

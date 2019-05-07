@@ -1,0 +1,147 @@
+.rightside {
+  width: 17.5rem;
+  height: calc(100vh - 4.4rem);
+  position: fixed;
+  right: -17.5rem;
+  top: 4.4rem;
+  background: #fdfdfd;
+  -webkit-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.rightside.open {
+  right: 0;
+}
+
+.rightside.open ~ .overlay {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: visibility 0.5s, opacity 0.5s linear;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.rightnavtab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightnavtab .rightnavtab__navitem {
+  width: 50%;
+  text-align: center;
+}
+
+.rightnavtab__tabcontent {
+  height: calc(100% - 3rem);
+  overflow: auto;
+}
+
+.rightnavtab__tabcolorcheckitem {
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 0.8px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.rightnavtab__tabcolorcheckitem:hover, .rightnavtab__tabcolorcheckitem.activetheme {
+  background-color: #efefef;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+.rightnavtab__tabcolorcheckitem > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.rightnavtab__tabcolorcheckitem > div > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rightnavtab__tabcolorcheckitem > div input[type="radio"] {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.rightnavtab__tabcolorcheckitem > div i {
+  font-size: 2rem;
+}
+
+.rightnavtab__tabcolorcheckitem > div i.checksymbol {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.2s;
+  -webkit-transition: visibility 0.3s, opacity 0.2s;
+}
+
+.rightnavtab__tabcolorcheckitem > div i.checksymbol.activetheme {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s, opacity 0.2s;
+  -webkit-transition: visibility 0.3s, opacity 0.2s;
+}
+
+.rightnavtab__tabcolorcheckitem > div span {
+  margin-left: 0.5rem;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=Rightside.css.map */

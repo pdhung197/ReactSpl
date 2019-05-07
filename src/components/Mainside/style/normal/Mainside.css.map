@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "../Mainside.scss"
+    ],
+    "names": [],
+    "file": "Mainside.css"
+}

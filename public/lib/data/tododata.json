@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "todo": "Nghỉ lễ",
+    "status": 1
+  },
+  {
+    "id": 2,
+    "todo": "Làm bài tập",
+    "status": 0
+  },
+  {
+    "id": 3,
+    "todo": "Javascript",
+    "status": 0
+  },
+  {
+    "id": 4,
+    "todo": "ReactJS",
+    "status": 0
+  }
+]

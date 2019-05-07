@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Hand - Tossed Medium",
+    "cost": 8.49,
+    "image": "Pepperoni and Red Peppers, Medium 12, Hand Tossed Crust, $5.99.jpg"
+  },
+  { "id": 2, "name": "Hand - Tossed Large", "cost": 10.49, "image": "o.jpg" },
+  { "id": 3, "name": "Pan Pizza Personal", "cost": 4.29, "image": "o (1).jpg" },
+  {
+    "id": 4,
+    "name": "Pan Pizza Medium",
+    "cost": 8.49,
+    "image": "pizza-hut-trinidad-and-tobago-pan.png"
+  },
+  {
+    "id": 5,
+    "name": "Pan Pizza Large",
+    "cost": 10.49,
+    "image": "1344-3-large.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Thin N Crispy Medium",
+    "cost": 8.49,
+    "image": "veggie-lovers-1538497115.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Thin N Crispy Large",
+    "cost": 10.49,
+    "image": "59d4f7e7d7605b52008b4a9f-750-562.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Stuffed Crust Large",
+    "cost": 12.49,
+    "image": "stuffed-crust-pepperoni3.png"
+  },
+  {
+    "id": 9,
+    "name": "Skinny Crust Large",
+    "cost": 10.49,
+    "image": "veggie-pizza.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Cheesy Bites Large",
+    "cost": 11.9,
+    "image": "Pizza-Hut-Brings-Back-The-Cheesy-Bites-Pizza-678x381.jpg"
+  }
+]

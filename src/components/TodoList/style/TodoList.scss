@@ -1,0 +1,107 @@
+.todolist__table {
+  .card-body {
+    padding: 0;
+  }
+}
+ul.todolist__tablepanel {
+  padding: 0;
+  margin: 0;
+  li {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #eee;
+    .todolist_btngroup {
+      display: flex;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      padding: 0.8rem 1.2rem;
+    }
+    &:hover {
+      background-color: #efefef;
+      .todolist_btngroup {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+      }
+    }
+    label {
+      margin: 0;
+      padding: 0.8rem 1.2rem;
+      cursor: pointer;
+      > * {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+      }
+      .checkmark {
+        padding: 0.5rem;
+        background-color: #efefef;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        box-sizing: border-box;
+        transition: background-color 0.2s, border 0.3s;
+        -webkit-transition: background-color 0.2s, border 0.3s;
+
+        i {
+          color: #fff;
+          visibility: hidden;
+          transition: visibility 0.3s;
+          -webkit-transition: visibility 0.3s;
+        }
+      }
+      .checktext {
+        margin-left: 0.5rem;
+        color: #888;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+      }
+      &:hover {
+        .checkmark {
+          background-color: rgb(220, 253, 255);
+          border: 3px solid rgb(208, 236, 235);
+          transition: background-color 0.2s, border 0.3s;
+          -webkit-transition: background-color 0.2s, border 0.3s;
+        }
+        .checktext {
+          color: #555;
+          font-style: italic;
+          transition: all 0.2s;
+          -webkit-transition: all 0.2s;
+        }
+      }
+      input {
+        display: none;
+        &:checked {
+          ~ .checkmark {
+            background-color: #2196f3;
+            border: 3px solid #fff;
+            transition: background-color 0.2s, border 0.3s;
+            -webkit-transition: background-color 0.2s, border 0.3s;
+            i {
+              visibility: visible;
+              transition: visibility 0.3s;
+              -webkit-transition: visibility 0.3s;
+            }
+          }
+          ~ .checktext {
+            color: #333;
+            font-style: normal;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+          }
+        }
+      }
+    }
+  }
+}
